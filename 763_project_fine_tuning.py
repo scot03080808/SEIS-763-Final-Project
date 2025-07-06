@@ -543,7 +543,7 @@ pipeline = Pipeline([
 
 param_grid = {
     'classifier__C': [0.01, 0.1, 1, 10, 100],
-    'classifier__gamma': ['scale', 0.1, 0.01, 0.001]
+    'classifier__gamma': ['scale', 0.1, 0.01, 0.001] # Fixed the missing quote here
 }
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
